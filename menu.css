@@ -52,7 +52,6 @@
 
 .menu ul li {
     margin-bottom: 10px;
-    position: relative; /* Pozycja dla podkreślenia */
 }
 
 .menu ul li a {
@@ -66,22 +65,22 @@
     position: relative; /* Pozycja dla podkreślenia */
 }
 
-.menu ul li::after {
+.menu ul li::before {
     content: '';
     position: absolute;
-    width: 0; /* Szerokość początkowa podkreślenia */
-    height: 3px; /* Grubość podkreślenia */
+    width: 100%;
+    height: 1px; /* Grubość podkreślenia */
     bottom: -3px; /* Odległość od tekstu */
-    left: 50%; /* Początkowa pozycja */
+    left: 0; /* Początkowa pozycja */
+    visibility: hidden;
     background-color: transparent; /* Kolor podkreślenia (początkowo transparentne) */
-    transition: width 0.3s ease, opacity 0.3s ease, left 0.3s ease; /* Płynne przejście */
-    opacity: 0; /* Początkowo niewidoczne */
+    transition: transform 0.3s ease, visibility 0.3s ease, width 0.3s ease; /* Dodanie przejścia dla transformacji i widoczności */
 }
 
-.menu ul li a:hover::after {
-    width: 80%; /* Długość podkreślenia po najechaniu */
-    opacity: 0.9; /* Widoczne po najechaniu */
-    left: 10%; /* Pozycja podkreślenia */
+.menu ul li a:hover::before {
+    visibility: visible;
+    width: 100%; /* Pełna szerokość podkreślenia */
+    transform: scaleX(1); /* Rozszerzenie podkreślenia */
 }
 
 .menu ul li:hover a {

@@ -1,7 +1,7 @@
 :root{
     --primary_color: #333;
 }
-/* Resetowanie domyślnych styli */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +15,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 20%; /* 1/5 szerokości */
+    width: 20%; 
     background-color: #f0f0f0;
     position: fixed;
     top: 0;
     left: 0;
-    overflow: hidden; /* Ukrycie nadmiarowego logo */
+    overflow: hidden;
 }
 
 .logo {
@@ -30,7 +30,7 @@
     display: flex; 
     align-items: center;
     padding: 10px;
-    margin-bottom: 20px; /* Dodatkowy margines na dole dla wyśrodkowania */
+    margin-bottom: 20px;
     margin-top: 10px;
 }
 
@@ -38,7 +38,7 @@
     width: 100%;
     justify-content: center;
     height: 100%;
-    object-fit: cover; /* Zachowanie proporcji */
+    object-fit: cover;
     display: block;
 }
 
@@ -48,9 +48,9 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Odnośniki wycentrowane */
-    justify-content: center; /* Linki wycentrowane */
-    height: 100%; /* Wyśrodkowanie linków na całej wysokości menu */
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .menu ul li {
@@ -62,32 +62,32 @@
     color:var(--primary_color);
     display: block;
     padding: 10px;
-    text-align: center; /* Tekst wycentrowany */
-    font-size: 2em; /* Powiększenie czcionki */
-    transition: color 1s ease; /* Płynne przejście koloru */
-    position: relative; /* Pozycja dla podkreślenia */
+    text-align: center; 
+    font-size: 2em;
+    transition: color 1s ease; 
+    position: relative; 
 }
 
 .menu ul li::before {
     position: absolute;
     width: 100%;
-    height: 2px; /* Grubość podkreślenia */
-    bottom: -3px; /* Odległość od tekstu */
-    left: 0; /* Początkowa pozycja */
+    height: 2px; 
+    bottom: -3px; 
+    left: 0; 
     visibility: hidden;
-    background-color: transparent; /* Kolor podkreślenia (początkowo transparentne) */
-    transition: transform 0.3s ease, visibility 0.3s ease, width 0.3s ease; /* Dodanie przejścia dla transformacji i widoczności */
+    background-color: transparent; 
+    transition: transform 0.3s ease, visibility 0.3s ease, width 0.3s ease; 
 }
 
 .menu ul li a:hover::before {
     visibility: visible;
-    width: 100%; /* Pełna szerokość podkreślenia */
-    transform: scaleX(2); /* Rozszerzenie podkreślenia */
+    width: 100%; 
+    transform: scaleX(2); 
 }
 
 .menu ul li:hover a {
-    color: #acacac; /* Zmiana koloru po najechaniu */
-    text-decoration: none; /* Usunięcie podkreślenia po najechaniu */
+    color: #acacac; 
+    text-decoration: none;
 }
 
 
@@ -100,36 +100,36 @@
         width: 100%;
         height: auto;
         position: static;
-        flex-direction: row; /* Zmiana kierunku dla odnośników na poziomy */
-        overflow: visible; /* Pokazanie nadmiarowego logo */
+        flex-direction: row; 
+        overflow: visible;
     }
 
     .logo {
-        width: 100px; /* Pomniejszenie szerokości logo dla telefonów */
-        height: 65px; /* Pomniejszenie wysokości logo dla telefonów */
-        margin-bottom: 0; /* Resetowanie marginesu */
+        width: 100px; 
+        height: 65px; 
+        margin-bottom: 0; 
         margin-right: 30px;
     }
 
     .menu ul {
-        flex-direction: row; /* Odnośniki poziomo dla telefonów */
-        justify-content: center space-around; /* Wyśrodkowanie odnośników */
-        align-items: center; /* Wyśrodkowanie odnośników */
-        height: auto; /* Wysokość automatyczna */
-        margin-top: 20px; /* Dodatkowy margines na górze */
+        flex-direction: row;
+        justify-content: center space-around; 
+        align-items: center; 
+        height: auto; 
+        margin-top: 20px; 
     }
 
     .menu ul li {
         margin-bottom: 0;
-        margin-right: 50px; /* Odstęp między odnośnikami */
-        position: relative; /* Pozycja dla podkreślenia */
+        margin-right: 50px; 
+        position: relative; 
     }
 
     .menu ul li:last-child {
-        margin-right: 0; /* Usunięcie marginesu dla ostatniego odnośnika */
+        margin-right: 0; 
     }
 
     .menu ul li a {
-        font-size: 1em; /* Zmniejszenie czcionki odnośników o 2 razy */
+        font-size: 1em; 
     }
 }

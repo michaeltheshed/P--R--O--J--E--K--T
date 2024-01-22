@@ -12,7 +12,6 @@
 
 
 .about .music{
-  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 40px;
   padding: 20px;
 }
@@ -23,7 +22,6 @@
   justify-items: center;
   text-align: center;
   border-radius: 0px;
-  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 50px;
   padding: 10px;
   box-sizing: border-box;

@@ -17,7 +17,7 @@
 }
 
 .merch, .about, .media{
-  width: max-width;
+  width: 80%;
   height: fit-content;
   text-align: center;
   border-radius: 0px;

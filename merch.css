@@ -16,7 +16,7 @@
   padding: 20px;
 } */
 
-.merch .about .music{
+.merch, .about, .music{
   width: 100%;
   height: fit-content;
   justify-items: center;

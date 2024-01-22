@@ -9,19 +9,6 @@
   padding-bottom: 100px;
 }
 
-/* .baner-1{
-  height: 300px;
-  width: 100%;
-  background-image: url('banner.png'); /* Podmień 'twoj_obraz.jpg' na ścieżkę do swojego obrazu */
-  background-size: cover; /* Zapewnia, że obraz będzie się skalował, aby pokrywać całe tło */
-  background-position: center; /* Wyśrodkowanie obrazu */
-  background-repeat: no-repeat; /* Uniemożliwienie powtarzania obrazu */
-  position: relative; /* Względne pozycjonowanie potrzebne do przyciemnienia tła */
-  text-align: center; /* Wyśrodkowanie tekstu */
-  color: white; /* Kolor tekstu na obrazie */
-} */
-
-
 
 #about{
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.3);
@@ -30,7 +17,7 @@
 }
 
 .merch, .about, .media{
-  width: fit-content;
+  width: max-width;
   height: fit-content;
   text-align: center;
   border-radius: 0px;

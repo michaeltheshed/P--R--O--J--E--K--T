@@ -11,13 +11,13 @@
 }
 
 
-#about, .music{
+#about .music{
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 40px;
   padding: 20px;
 }
 
-.merch, .about, .music{
+.merch .about .music{
   width: 100%;
   height: fit-content;
   justify-items: center;

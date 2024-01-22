@@ -28,6 +28,10 @@
   box-sizing: border-box;
 }
 
+.merch{
+  margin-top: 20px;
+}
+
 .product {
     display: flex;
     flex-direction: column;

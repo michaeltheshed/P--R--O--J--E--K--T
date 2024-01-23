@@ -15,8 +15,7 @@
   padding: 20px;
 }
 
-.merch, .about, .media{
-  width: fit-content;
+.merch, .about, .music{
   height: fit-content;
   text-align: center;
   border-radius: 0px;
@@ -24,6 +23,7 @@
   margin: 10px;
   padding: 10px;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .product {
